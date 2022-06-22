@@ -1,0 +1,446 @@
+body {
+  background-color: black;
+  margin: 0px 70px 0px 70px;
+}
+.container1 {
+  position: relative;
+  margin-top: 5%;
+  height: 400px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 0px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container1:hover {
+  box-shadow: 0 0 11px white;
+}
+
+.container1 img {
+  height: 310px;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.container2 {
+  position: relative;
+  margin-top: 5%;
+  height: 400px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: white;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container2:hover {
+  box-shadow: 0 0 11px white;
+}
+
+.container2 img {
+  height: 310px;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.container3 {
+  position: relative;
+  margin-top: 5%;
+  height: 400px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: white;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container3:hover {
+  box-shadow: 0 0 11px white;
+}
+
+.container3 img {
+  height: 310px;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.img {
+  margin-bottom: -20px;
+  height: 310px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.img:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: black;
+  margin-top: -20px;
+}
+button:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.barDeCommande {
+  margin-top: 30px;
+  height: 70px;
+}
+
+/*-------------------------------------------------------------Heart1-------------------------------------------------------*/
+.heart {
+  position: relative;
+  top: -390px;
+  left: 0px;
+  border-radius: 0 0 0 10px;
+  transform: rotate(-45deg);
+  background-color: gray;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.heart:hover {
+  box-shadow: 0 0 11px rgb(255, 255, 255);
+  background-color: rgb(207, 111, 111);
+}
+
+.heart::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.heart::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.heart.fill-color {
+  background-color: red;
+}
+.animation-heart {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  border-radius: 0 0 0 10px;
+  transform: rotate(-45deg);
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.animation-heart.animation {
+  animation: popup 0.8s linear;
+  visibility: visible;
+}
+.animation-heart::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: -50%;
+  right: 0;
+  background: inherit;
+  border-radius: 50%;
+}
+.animation-heart::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -50%;
+  background: inherit;
+  border-radius: 50%;
+}
+/*-------------------------------------------------------------Heart1-------------------------------------------------------*/
+/*-------------------------------------------------------------Heart2-------------------------------------------------------*/
+
+.heartd {
+  position: relative;
+  top: -390px;
+  left: 0px;
+  border-radius: 0 0 0 10px;
+  transform: rotate(-45deg);
+  background-color: gray;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.heartd:hover {
+  box-shadow: 0 0 11px rgb(255, 255, 255);
+  background-color: rgb(207, 111, 111);
+}
+
+.heartd::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.heartd::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.heartd.fill-colord {
+  background-color: red;
+}
+.animation-heartd {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  border-radius: 0 0 0 10px;
+  transform: rotate(-45deg);
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.animation-heartd.animationd {
+  animation: popup 0.8s linear;
+  visibility: visible;
+}
+.animation-heartd::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: -50%;
+  right: 0;
+  background: inherit;
+  border-radius: 50%;
+}
+.animation-heartd::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -50%;
+  background: inherit;
+  border-radius: 50%;
+}
+/*-------------------------------------------------------------Heart2-------------------------------------------------------*/
+/*-------------------------------------------------------------Heart3-------------------------------------------------------*/
+.heartt {
+  position: relative;
+  top: -390px;
+  left: 0px;
+  border-radius: 0 0 0 10px;
+  transform: rotate(-45deg);
+  background-color: gray;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.heartt:hover {
+  box-shadow: 0 0 11px rgb(255, 255, 255);
+  background-color: rgb(207, 111, 111);
+}
+
+.heartt::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.heartt::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.heartt.fill-colort {
+  background-color: red;
+}
+.animation-heartt {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  border-radius: 0 0 0 10px;
+  transform: rotate(-45deg);
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.animation-heartt.animationt {
+  animation: popup 0.8s linear;
+  visibility: visible;
+}
+@keyframes popup {
+  0% {
+    transform: scale(1.5) rotate(-45deg);
+    opacity: 0;
+  }
+}
+.animation-heartt::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: -50%;
+  right: 0;
+  background: inherit;
+  border-radius: 50%;
+}
+.animation-heartt::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -50%;
+  background: inherit;
+  border-radius: 50%;
+}
+/*-------------------------------------------------------------Heart3-------------------------------------------------------*/
+/*-------------------------------------------------------------+&--------------------------------------------------------*/
+
+#decrementa {
+  margin-left: 20px;
+  color: white;
+}
+#incrementa {
+  color: white;
+  margin-left: 30px;
+}
+
+#shopping-cart1 {
+  color: gray;
+  z-index: 3;
+  background-color: white;
+  position: absolute;
+  left: 200px;
+  top: 362px;
+  cursor: pointer;
+}
+#shopping-cart2 {
+  color: gray;
+  z-index: 3;
+  background-color: white;
+  position: absolute;
+  left: 200px;
+  top: 362px;
+  cursor: pointer;
+}
+#shopping-cart3 {
+  color: gray;
+  z-index: 3;
+  background-color: white;
+  position: absolute;
+  left: 200px;
+  top: 362px;
+  cursor: pointer;
+}
+
+#shopping-cart1:hover {
+  color: rgb(226, 103, 103);
+}
+#shopping-cart2:hover {
+  color: rgb(226, 103, 103);
+}
+#shopping-cart3:hover {
+  color: rgb(226, 103, 103);
+}
+/*-------------------------------------------------------------+&--------------------------------------------------------*/
+/*-------------------------------------------------------------cart-------------------------------------------------------*/
+#cart {
+  flex-wrap: wrap;
+  bottom: 0;
+  margin-top: 50px;
+  width: 1100px;
+  height: 150px;
+  background-color: white;
+  border-radius: 5px;
+}
+#h1-cart:hover{
+  text-decoration: underline;
+}
+#h1-favoris:hover{
+  text-decoration: underline;
+}
+
+#cart-capuche img{
+  width: 140px;
+  height: 140px;
+}#cart-sacados img{
+  border-top-left-radius: 5px;
+  width: 140px;
+  height: 140px;
+}#cart-casquette img{
+  width: 140px;
+  height: 140px;
+}
+#cart-sacados {
+  display: none;
+  border-left: 1px solid gray;
+  border-top-left-radius: 5px;
+
+  width: 300px;
+  height: 150px;
+  
+}
+#cart-casquette {
+  border-left: 1px solid gray;
+
+  display: none;
+  height: 150px;
+  width: 300px;
+
+  
+}
+#cart-capuche {
+  border-left: 1px solid gray;
+  display: none;
+  height: 150px;
+
+  width: 300px;  
+}
+
+#totale {
+  position: relative;
+  right: 0%;
+  justify-content: center;
+  text-align: center;
+  border-left: 1px solid gray;
+  display: none;
+  height: 150px;
+  width: 150px;  
+}
+/*-------------------------------------------------------------cart-------------------------------------------------------*/

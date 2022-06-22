@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b76963d766.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="favicon" />
+    <title>shopping Card</title>
+  </head>
+  <body>
+    <h1 id="topOfThePage" style="background-color: black; color: gray; margin-top: -5px">
+      <center>
+        <br />
+        MechMach Store <br />
+        ADDICTED TO BLACK
+      </center>
+    </h1>
+    <a href="#cart">
+      <div id="shopping-cart"
+    style="
+      position: relative;
+      background-color: black;
+      color: white;
+      top: 20px;
+      left: 0;
+      cursor: pointer;
+      
+    ">
+    <button id="cart-open" style="position: absolute;" onclick="Cart()"> 
+    <i style="background-color: black; color:gray"  class="fa-solid fa-cart-arrow-down"></i>
+    </div>
+    <button onclick="favoris()" id="favoris-open" style="position: absolute; right: 7%; top: 160px"> <i class="fa-solid fa-heart" style="color: gray;"></i></button>
+    <h1 onclick="favoris()" id="h1-favoris" style="color: gray; position:absolute; cursor:pointer; right: 10%; top: 113px">Favoris</h1>
+<h1 onclick="Cart()" id="h1-cart" style="color : gray; position: absolute;  cursor: pointer;">Cart</h1></a>
+
+    </button>
+
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 50px;">
+      <div class="container1">
+        <div class="img">
+          <img
+            src="/images/eastpak-sac-a-dos-padded-pak-r-24-litres-noir.webp"
+            alt="sac-a-dos"
+          />
+        </div>
+        <div class="barDeCommande">
+          <h3 style="margin-left: 115px">Sac a dos</h3>
+          <button id="decrementa" style="color: gray;">-</button>
+          <div
+            id="numbera"
+            style="
+              width: 40px;
+              position: absolute;
+              top: 360px;
+              height: 30px;
+              text-align: center;
+              left: 47px;
+            "
+          >
+            0
+          </div>
+          <button id="incrementa" style="color: gray;">+</button>
+          <div class="heart"></div>
+          <div class="animation-heart"></div>
+          <div
+            style="position: absolute; top: 360px; left: 250px; color: black"
+          >
+            50$
+          </div>
+        </div>
+        <i id="shopping-cart1"  onclick="cart1add()"class="fa-solid fa-cart-arrow-down"></i>
+
+      </div>
+
+      <div class="container2">
+        <div class="img">
+          <img src="/images/casquette.jpg" alt="capuche" />
+        </div>
+        <div class="barDeCommande">
+          <h3 style="margin-left: 115px">Casquette</h3>
+          <button id="decrement2" style="margin-left: 20px; color: gray">
+            -
+          </button>
+          <div
+            id="number2"
+            style="
+              width: 40px;
+              position: absolute;
+              top: 360px;
+              height: 30px;
+              text-align: center;
+              left: 47px;
+            "
+          >
+            0
+          </div>
+          <button id="increment2" style="color: gray; margin-left: 30px">
+            +
+          </button>
+          <div class="heartd" ></div>
+          <div class="animation-heartd"></div>
+          <div
+            style="position: absolute; top: 360px; left: 250px; color: black"
+          >
+            25$
+          </div>
+        </div>
+        <i id="shopping-cart2"  onclick="cart2add()"class="fa-solid fa-cart-arrow-down"></i>
+
+      </div>     
+
+
+      <div class="container3">
+        <div class="img">
+          <img src="/images/capuche.webp" alt="capuche" />
+        </div>
+        <div class="barDeCommande">
+          <h3 style="margin-left: 115px">Capuche</h3>
+          <button id="decrement3" style="margin-left: 20px; color: gray">
+            -
+          </button>
+          <div
+            id="number3"
+            style="
+              width: 40px;
+              position: absolute;
+              top: 360px;
+              height: 30px;
+              text-align: center;
+              left: 47px;
+            "
+          >
+            0
+          </div>
+          <button id="increment3" style="color: gray; margin-left: 30px">
+            +
+          </button>
+          <div class="heartt"></div>
+          <div class="animation-heartt"></div>
+          <div
+            style="position: absolute; top: 360px; left: 250px; color: black"
+          >
+            60$
+          </div>
+        </div>
+        <i id="shopping-cart3" onclick="cart3add()" class="fa-solid fa-cart-arrow-down"></i>
+      </div>
+      <div id="cart">
+          <div id="cart-sacados">
+
+           <img src="/images/eastpak-sac-a-dos-padded-pak-r-24-litres-noir.webp" alt="sacados"><div>
+           <p>Product : Sac a dos </p>
+           <p> Quantity :</p> <p id="quantity1" style="position: relative; top : -34px ; left: 70px;" > 0 </p>
+           <p style="position: relative; top : -34px ;"> Price : 50$ </p>
+           <p style="position: relative; top : -34px ;"> Totale :</p> <p id="totale1" style="position: relative; top : -68px ; left: 53px;"> 0$</p>
+          </div>
+           <button onclick="cart1remove()" style="position:relative; color: gray; top:100px ; left: -20px;">X</button>
+          
+          </div>
+          <div id="cart-casquette">
+
+            <img src="/images/casquette.jpg" alt="capuche"><div>
+              <p>Product : Casquette </p>
+              <p> Quantity :</p> <p id="quantity2" style="position: relative; top : -34px ; left: 70px;" > 0 </p>
+              <p style="position: relative; top : -34px ;"> Price : 25$ </p>
+              <p style="position: relative; top : -34px ;"> Totale :</p> <p id="totale2" style="position: relative; top : -68px ; left: 53px;"> 0$</p>
+             </div>
+           <button onclick="cart2remove()" style="position:relative; color: gray; top:100px ; left: -20px;">X</button>
+
+  
+          </div>
+          <div id="cart-capuche">
+            <img src="/images/capuche.webp" alt="capuche"><div>
+              <p>Product : Capuche </p>
+              <p> Quantity :</p> <p id="quantity3" style="position: relative; top : -34px ; left: 70px;" > 0 </p>
+              <p style="position: relative; top : -34px ;"> Price : 60$ </p>
+              <p style="position: relative; top : -34px ;"> Totale :</p> <p id="totale3" style="position: relative; top : -68px ; left: 53px;"> 0$</p>
+             </div>
+           <button onclick="cart3remove()" style="position:relative; color: gray; top:100px ; left: -20px;">X</button>
+
+
+          </div>
+          <div id="totale">
+            <h1 style="position: absolute; margin-top: 0px;">Totale</h1>
+            <p id="mimi" style="position: absolute; top: 20px; font-size: 30px;"><b> 0$</b></p>
+            <button onclick="buy()" style="position: absolute; top: 110px ; left: 100px; height: 50px;width: 80px; color: gray;">Buy</button>
+          </div>
+      </div>
+    </div>
+    <script defer src="JS/script.js"></script>
+  </body>
+</html>
